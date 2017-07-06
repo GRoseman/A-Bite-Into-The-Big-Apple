@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>  
+    <title>A Bite Into The Big Apple</title>
+    <meta name="description" content="Analyzing real estate prices in Manhattan, NYC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">A Bite Into The Big Apple</h1>
+      <h2 class="project-tagline">Analyzing real estate prices in Manhattan, NYC</h2>
+    </section>
+
+    <section class="main-content">
+      <h2 id="prediction" align="center">{{ prediction }}</h2>
+      <center> <img src="https://maps.googleapis.com/maps/api/staticmap?&zoom=14&size=900x500&maptype=roadmap&markers=color:red%7C{{ latitude }},{{ longitude }}" align="middle"></center>
+    </section>
+
+</body></html>
